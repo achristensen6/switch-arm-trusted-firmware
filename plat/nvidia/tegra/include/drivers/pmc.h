@@ -14,6 +14,7 @@
 #define PMC_CONFIG				U(0x0)
 #define PMC_PWRGATE_STATUS			U(0x38)
 #define PMC_PWRGATE_TOGGLE			U(0x30)
+#define PMC_SCRATCH0				U(0x50)
 #define  PMC_TOGGLE_START			U(0x100)
 #define PMC_SCRATCH39				U(0x138)
 #define PMC_SECURE_DISABLE2			U(0x2c4)

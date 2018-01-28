@@ -102,6 +102,9 @@ __dead2 void tegra_pmc_system_reset(void)
 {
 	uint32_t reg;
 
+	// enter rcm
+	tegra_pmc_write_32(PMC_SCRATCH0, 2);
+
 	reg = tegra_pmc_read_32(PMC_CONFIG);
 	reg |= RESET_ENABLE;		/* restart */
 	tegra_pmc_write_32(PMC_CONFIG, reg);
